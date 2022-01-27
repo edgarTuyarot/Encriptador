@@ -1,0 +1,40 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+h1 {
+  text-align: center;
+}
+.button {
+  color: beige;
+  background-color: cadetblue;
+  border: none;
+  font-size: 18px;
+  margin-top: 8px;
+}
+.contenedor {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.contenedor div {
+  margin: 35px;
+  text-align: left;
+}
+.textos {
+  width: 250px;
+  height: 25px;
+  border-radius: 10px;
+  border: solid 1px;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 90px;
+  bottom: 0;
+  position: absolute;
+  width: 90%;
+
+}
