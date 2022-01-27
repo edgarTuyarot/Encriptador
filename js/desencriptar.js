@@ -1,11 +1,9 @@
-
-
 function decodificar(texto) {
-  var textoDeco = texto.replaceAll("enter", "e");
-  textoDeco = textoDeco.replaceAll("ai", "a");
-  textoDeco = textoDeco.replaceAll("imes", "i");
-  textoDeco = textoDeco.replaceAll("ober", "o");
-  textoDeco = textoDeco.replaceAll("ufat", "u");
+  texto = texto.replaceAll("enter", "e");
+  texto = texto.replaceAll("ai", "a");
+  texto = texto.replaceAll("imes", "i");
+  texto = texto.replaceAll("ober", "o");
+  texto = texto.replaceAll("ufat", "u");
 
-  return textoDeco;
+  return texto;
 }
