@@ -2,10 +2,10 @@ var botonEncriptar = document.querySelector("#encriptar");
 var desencriptar = document.querySelector("#desencriptar");
 var resultado = document.querySelector("#resultado");
 var botonCopiar = document.querySelector("#copiar");
-var textoIntroducido = document.querySelector("#texto-introducido");
-var texto = textoIntroducido.value;
 
 botonEncriptar.addEventListener("click", () => {
+  var textoIntroducido = document.querySelector("#texto-introducido");
+  var texto = textoIntroducido.value;
   if (texto != "") {
     var textoCodificado = "";
     texto = texto.toLowerCase();
@@ -19,10 +19,12 @@ botonEncriptar.addEventListener("click", () => {
 });
 
 desencriptar.addEventListener("click", () => {
+  var textoIntroducido = document.querySelector("#texto-introducido");
+  var texto = textoIntroducido.value;
   if (texto != "") {
     textoDecodificado = decodificar(texto);
     resultado.value = textoDecodificado;
-    console.log(textoDecodificado);
+ 
   } else {
     alert("ingrese algun caracter");
   }
